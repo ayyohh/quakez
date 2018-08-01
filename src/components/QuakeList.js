@@ -6,7 +6,7 @@ class QuakeList extends Component {
   render(){
     let quakeList = this.props.quakesData.map((element, index) => {
 
-      return <Quake key={index} mag={element.properties.mag} title={element.properties.title} />
+      return <Quake key={index} mag={element.properties.mag} title={element.properties.title} place={element.properties.place} tsunami={element.properties.tsunami} />
 
     })
 
